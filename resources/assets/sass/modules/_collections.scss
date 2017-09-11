@@ -1,0 +1,84 @@
+.category-header {
+	margin: 100px 0px 60px;
+	
+	h3 {
+		font-weight: normal;
+		font-size: 20px;
+		line-height: 32px;
+		color: #666;
+		margin-top: 10px;
+	}
+}
+
+.collection-page {
+	.each-category {
+		margin-bottom: 15px;
+	}
+	.each-article {
+		.uk-card-media-top {
+			min-height: 150px;
+		}
+	}
+
+	.uk-card-title {
+		font-size: 20px;
+		font-weight: 600;
+		line-height: 32px;
+		color: #555;
+		display: block;
+
+	}
+	a.uk-card-title {
+		&:hover {
+			text-decoration: none !important;
+			color:  #000000;
+		}
+	}
+	.uk-card-body {
+		min-height: 178px;
+	}
+	.uk-card-body p {
+		font-size: 20px;
+		line-height: 30px;			
+		color: rgba(0, 0, 0, 0.44);
+	}
+	.uk-button-default {
+		border-radius: 500px;
+	}
+	.uk-card.card-horizontal {
+		.uk-card-title {
+			min-height: 120px;
+
+		}
+		.uk-card-body {
+			border:0px;
+			min-height: 0px;
+			padding-bottom: 0px;
+		}
+		.uk-card-media-left {
+			border-bottom-left-radius: 3px;
+			border-top-left-radius: 3px;
+		}
+		.card-footer {
+			padding: 20px;
+		}
+	}
+
+	.uk-card-media-top {
+		color: #ffffff;
+		min-height: 300px;
+		.lead-txt {
+			font-size: 40px;
+			font-weight: bold;
+		}
+		
+		.sub-txt {
+			font-size: 18px;
+			font-weight: light;
+		}
+
+		&.other-category {
+			min-height: 150px;
+		}
+	}
+}
