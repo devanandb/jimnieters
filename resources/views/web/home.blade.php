@@ -4,8 +4,8 @@
     Home
 @endsection
 @section('meta')
-<meta property="description" content="I am a ux leader who loves to inspire and be inspired by design. Great design disrupts markets and delights users.">
-<meta property="keywords" content="Jim Nieters, Portfolio, Blog, User experience, Design, Leadership">
+<meta name="description" content="I am a ux leader who loves to inspire and be inspired by design. Great design disrupts markets and delights users.">
+<meta name="keywords" content="Jim Nieters, Portfolio, Blog, User experience, Design, Leadership">
 @endsection
 
 @section('content')

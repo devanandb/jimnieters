@@ -4,8 +4,8 @@
 @endsection
 
 @section('meta')
-<meta property="description" content="{{$category->description}}">
-<meta property="keywords" content="{{$category->title}}, Article, Portfolio, User experience, Design, Leadership">
+<meta name="description" content="{{$category->description}}">
+<meta name="keywords" content="{{$category->title}}, Article, Portfolio, User experience, Design, Leadership">
 @endsection
 
 @section('content')

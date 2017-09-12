@@ -2,8 +2,8 @@
 
 @section('title'){{ $article->title }}@endsection
 @section('meta')
-<meta property="description" content="{{$article->summary}}">
-<meta property="keywords" content="@foreach ($article->tags as $tag){{$tag->name}}, @endforeach">
+<meta name="description" content="{{$article->summary}}">
+<meta name="keywords" content="@foreach ($article->tags as $tag){{$tag->name}}, @endforeach">
 
 <meta property="og:title" content="{{ $article->title }}">
 <meta property="og:description" content="{{ $article->summary }}">
