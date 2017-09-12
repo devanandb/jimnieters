@@ -6,7 +6,7 @@
                     {{-- {{ config('app.name', 'Larsdfavel') }} --}}
                     Jim Nieters
                 </a>
-                <ul class="uk-navbar-nav">
+                {{-- <ul class="uk-navbar-nav">
                     @foreach ($categories as $cat)
                         @if (count($cat->articles))
                             
@@ -16,21 +16,20 @@
                         @endif
                     @endforeach
                     
-                </ul>
+                </ul> --}}
             
                 
             </div>
     
             <div class="uk-navbar-right">
-                <ul class="uk-navbar-nav">
-                    <!-- Authentication Links -->
+                {{-- <ul class="uk-navbar-nav">
                     @guest
                         <li><a href="{{ route('login') }}">Login</a></li>
                         <li><a href="{{ route('register') }}">Register</a></li>
                     @else
                         <li>
                             <a href="#">
-                                {{ Auth::user()->name }} {{-- <span class="caret"></span> --}}
+                                {{ Auth::user()->name }}
                             </a>
                             <div class="uk-navbar-dropdown">
                                 <ul class="uk-nav uk-navbar-dropdown-nav" role="menu">
@@ -50,6 +49,17 @@
                             
                         </li>
                     @endguest
+                </ul> --}}
+                <ul class="uk-navbar-nav">
+                    @foreach ($categories as $cat)
+                        @if (count($cat->articles))
+                            
+                            <li class="">
+                                <a class="" href="/category/{{$cat->slug}}">{{$cat->title}}</a>
+                            </li>
+                        @endif
+                    @endforeach
+                    
                 </ul>
             </div>
         </nav>

@@ -1,16 +1,24 @@
 @extends('layouts.app')
 
-@section('content')
+@section('title')
+    Home
+@endsection
+@section('meta')
+<meta property="description" content="I am a ux leader who loves to inspire and be inspired by design. Great design disrupts markets and delights users.">
+<meta property="keywords" content="Jim Nieters, Portfolio, Blog, User experience, Design, Leadership">
+@endsection
 
-{{-- <div class="home-hero">
+@section('content')
+<br><br><br>
+<div class="home-hero">
     <div class="uk-container">
-        <div class="uk-flex uk-flex-center uk-text-center" uk-grid>
-            <div class="uk-width-1-2@m">
-                "I am a ux leader who loves to inspire and be inspired by design. Great design disrupts markets and delights users."
+        <div class="" uk-grid>
+            <div class="uk-width-3-4@m">
+                <h1>I am a ux leader who loves to inspire and be inspired by design. Great design disrupts markets and delights users.</h1>
             </div>
         </div>
     </div>
-</div> --}}
+</div>
 
 <div class="category-section">
     <div class="uk-container">

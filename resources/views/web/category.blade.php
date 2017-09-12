@@ -1,4 +1,12 @@
 @extends('layouts.app')
+@section('title')
+    {{$category->title}}
+@endsection
+
+@section('meta')
+<meta property="description" content="{{$category->description}}">
+<meta property="keywords" content="{{$category->title}}, Article, Portfolio, User experience, Design, Leadership">
+@endsection
 
 @section('content')
 <div class="uk-container collection-page">
