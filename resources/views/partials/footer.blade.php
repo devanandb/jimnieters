@@ -1,1 +1,5 @@
-<footer class="uk-clearfix">Footer goes here</footer>
+<footer class="uk-clearfix">
+	<div class="uk-container">
+		sadfsdfsdf
+	</div>
+</footer>

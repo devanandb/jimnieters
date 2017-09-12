@@ -7,3 +7,16 @@ header {
 	font-size: 24px;
 	font-weight: 700;
 }
+
+footer {
+	padding: 80px 0px 20px;
+	color: #fff;
+	&:before {
+		content:'';
+		background-image: -webkit-linear-gradient(top right, #5753C9 0%, #6E7FF3 100%);
+		background-image: -o-linear-gradient(top right, #5753C9 0%, #6E7FF3 100%);
+		background-image: linear-gradient(to bottom left, #5753C9 0%, #6E7FF3 100%);
+		transform: skewY(-3deg);
+		height: 500px;
+	}	
+}
