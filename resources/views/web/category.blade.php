@@ -54,7 +54,7 @@
                                         </div>
                                     </div>
                                     <div class="uk-width-1-5 uk-flex uk-flex-middle">
-                                        <a href="" class="uk-icon-button uk-float-right" uk-icon="icon: social"></a>
+                                        <a href="/content/{{$article->slug}}" class="uk-icon-button uk-float-right" uk-icon="icon: chevron-right"></a>
                                     </div>
                                 </div>
                                 {{-- <p>{{ $category->description }}</p> --}}
@@ -104,7 +104,7 @@
                                             <span class="uk-text-meta">{{ $article->created_at->diffForHumans() }}</span>
                                     </div>
                                     <div class="uk-width-1-4 uk-flex uk-flex-middle">
-                                        <a href="" class="uk-icon-button uk-float-right" uk-icon="icon: social"></a>
+                                        <a href="/content/{{$article->slug}}" class="uk-icon-button uk-float-right" uk-icon="icon: chevron-right"></a>
                                     </div>
                                 </div>
                             </div>
@@ -134,7 +134,7 @@
                                             </div>
                                         </div>
                                         <div class="uk-width-1-5 uk-flex uk-flex-middle">
-                                            <a href="" class="uk-icon-button uk-float-right" uk-icon="icon: social"></a>
+                                            <a href="/content/{{$article->slug}}" class="uk-icon-button uk-float-right" uk-icon="icon: chevron-right"></a>
                                         </div>
                                     </div>
                                 </div>
@@ -198,7 +198,7 @@
                                             </div>
                                         </div>
                                         <div class="uk-width-1-5 uk-flex uk-flex-middle">
-                                            <a href="" class="uk-icon-button uk-float-right" uk-icon="icon: social"></a>
+                                            <a href="/content/{{$article->slug}}" class="uk-icon-button uk-float-right" uk-icon="icon: chevron-right"></a>
                                         </div>
                                     </div>
                                     {{-- <p>{{ $category->description }}</p> --}}

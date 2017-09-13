@@ -25,6 +25,7 @@ class CategoriesTableSeeder extends Seeder
                 'title' => 'Design',
                 'slug' => 'design',
                 'description' => 'If your product or service doesn’t delight, inspire, and engage, it’s a missed opportunity. Great design disrupts markets, from consumer electronics and gadgets, to apparel, to apps. They solve unmet and unstated user needs, and engage their users emotionally. Users love them!',
+                
                 'image' => '/images/jdesign.jpeg',
                 'published' => true,
                 'created_at' => date("Y-m-d H:i:s"),

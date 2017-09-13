@@ -30,14 +30,14 @@
 		border-radius: 3px;
 	}
 	.uk-card-media-top {
-		min-height: 270px;
+		min-height: 255px;
 		border-top-left-radius: 3px;
 		border-top-right-radius: 3px;
 	}
 	.uk-card-body {
 		padding: 20px;
 		border-top: 1px solid #ddd;
-		min-height: 200px;
+		min-height: 203px;
 		p {
 			color: #666;
 			font-size: 18px;
@@ -55,7 +55,7 @@
 	}
 	a {
 		text-transform: initial;
-		font-size: 18px;
+		font-size: 16px;
 		span {
 			text-transform: lowercase;
 		}

@@ -1,0 +1,16 @@
+.uk-button.uk-button-secondary {
+	/*border-radius: 500px !important;*/
+	transition: all .15s ease;
+	border-radius: 4px;
+	box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+	background: linear-gradient(-20deg, rgb(252, 96, 118) 0%, rgb(255, 154, 68) 100%);
+}
+
+.uk-button.uk-button-primary {
+	/*border-radius: 500px !important;*/
+	/*background: linear-gradient(-20deg, rgb(252, 96, 118) 0%, rgb(255, 154, 68) 100%);*/
+	background: #6772e5;
+	box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+	transition: all .15s ease;
+	border-radius: 4px;
+}

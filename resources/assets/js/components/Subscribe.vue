@@ -1,6 +1,6 @@
 <template>
     <div>
-        <button @click="subscribeModal" class="uk-button uk-button-default">{{ subscribe.cta }}</button>
+        <button @click="subscribeModal" class="uk-button uk-button-primary">{{ subscribe.cta }}</button>
         <div id="subscribeModal" uk-modal>
             <div class="uk-modal-dialog uk-modal-body">
                 <h2 class="uk-modal-title">Subscribe now</h2>
@@ -57,7 +57,7 @@
         mounted() {
             
             console.log(localStorage.getItem('subscribe'));
-            if(localStorage.getItem('subscribe') && localStorage.getItem('subscribe') == 'false') {
+            if(!localStorage.getItem('subscribe')) {
                 localStorage.setItem('subscribe', false);
             }
         },

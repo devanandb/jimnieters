@@ -4,8 +4,8 @@
     Home
 @endsection
 @section('meta')
-<meta name="description" content="I am a ux leader who loves to inspire and be inspired by design. Great design disrupts markets and delights users.">
-<meta name="keywords" content="Jim Nieters, Portfolio, Blog, User experience, Design, Leadership">
+<meta property="description" content="I am a ux leader who loves to inspire and be inspired by design. Great design disrupts markets and delights users.">
+<meta property="keywords" content="Jim Nieters, Portfolio, Blog, User experience, Design, Leadership">
 @endsection
 
 @section('content')
@@ -23,6 +23,9 @@
 <div class="category-section">
     <div class="uk-container">
         @foreach ($categories as $category)
+            @if (count($category->articles))
+                {{-- expr --}}
+            
             <div class="each-category">
                 <div class="header">
                     <div class="" uk-grid>
@@ -48,7 +51,7 @@
                                 
                             </div>
                             <div class="uk-card-footer">
-                                <a class="uk-button uk-button-text" href="/category/{{$category->slug}}">Read more about <span>{{ $category->title }}</span></a>
+                                <a class="uk-button uk-button-primary" href="/category/{{$category->slug}}">Read more about <span>{{ $category->title }}</span></a>
                                 {{-- <span uk-icon="icon: chevron-right; ratio: .7"></span> --}}
                             </div>
                         </div>
@@ -73,7 +76,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="uk-width-1-5@m uk-flex uk-flex-middle">
-                                                    <a href="" class="uk-icon-button uk-float-right" uk-icon="icon: social"></a>
+                                                    <a href="/content/{{$article->slug}}" class="uk-icon-button uk-float-right" uk-icon="icon: chevron-right"></a>
                                                 </div>
                                             </div>
                                             {{-- <p>{{ $category->description }}</p> --}}
@@ -86,6 +89,7 @@
                     </div>
                 </div>
             </div>
+            @endif
         @endforeach
     </div>
 </div>
