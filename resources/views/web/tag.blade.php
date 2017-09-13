@@ -43,30 +43,128 @@
             
         </div>
         <div class="uk-width-3-4@m">
-            <div class="each-category uk-grid-small" uk-grid>
+            <div class="each-category">
                 
-                <div class="uk-grid-small" uk-grid uk-height-match>
-                    @foreach ($tag->articles as $article)
-                        <div class="uk-width-1-2@m">
-                            <div class="uk-card card-horizontal uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
-                                <div class="uk-card-media-left uk-background-cover" style="background-image: url({{ $article->hero_img }});">
-                                    <canvas width="600" height="400"></canvas>
-                                </div>
-                                <div>
-                                    <div class="uk-card-body">
-                                        <a href="/content/{{$article->slug}}" class="uk-card-title uk-text-left">{{ $article->title }}</a>
+                <div class="uk-grid-small" uk-grid uk-height-match="target: .uk-card > .uk-card-body > .uk-card-title">
+                    @foreach ($tag->articles->chunk(5) as $article)
+                        {{-- @foreach ($articles as $article) --}}
+                        
+                            <div class="uk-width-1-2@m">
+                                <div class="uk-card card-horizontal uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                                    <div class="uk-card-media-left uk-background-cover" style="background-image: url({{ $article[0]->hero_img }});">
+                                        <canvas width="600" height="400"></canvas>
                                     </div>
-                                    <div class="card-footer" uk-grid>
-                                        <div class="uk-width-2-3 uk-flex uk-flex-middle">
-                                                <span class="uk-text-meta">{{ $article->created_at->diffForHumans() }}</span>
+                                    <div>
+                                        <div class="uk-card-body">
+                                            <a href="/content/{{$article[0]->slug}}" class="uk-card-title uk-text-left">{{ $article[0]->title }}</a>
                                         </div>
-                                        <div class="uk-width-1-3 uk-flex uk-flex-middle">
-                                            <a href="/content/{{$article->slug}}" class="uk-icon-button uk-float-right" uk-icon="icon: chevron-right"></a>
+                                        <div class="card-footer" uk-grid>
+                                            <div class="uk-width-2-3 uk-flex uk-flex-middle">
+                                                    <span class="uk-text-meta">{{ $article[0]->created_at->diffForHumans() }}</span>
+                                            </div>
+                                            <div class="uk-width-1-3 uk-flex uk-flex-middle">
+                                                <a href="/content/{{$article[0]->slug}}" class="uk-icon-button uk-float-right" uk-icon="icon: chevron-right"></a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                            @if (count($article) > 1)
+                                <div class="uk-width-1-2@m">
+                                    <div class="uk-card card-horizontal uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                                        <div class="uk-card-media-left uk-background-cover" style="background-image: url({{ $article[1]->hero_img }});">
+                                            <canvas width="600" height="400"></canvas>
+                                        </div>
+                                        <div>
+                                            <div class="uk-card-body">
+                                                <a href="/content/{{$article[1]->slug}}" class="uk-card-title uk-text-left">{{ $article[1]->title }}</a>
+                                            </div>
+                                            <div class="card-footer" uk-grid>
+                                                <div class="uk-width-2-3 uk-flex uk-flex-middle">
+                                                        <span class="uk-text-meta">{{ $article[1]->created_at->diffForHumans() }}</span>
+                                                </div>
+                                                <div class="uk-width-1-3 uk-flex uk-flex-middle">
+                                                    <a href="/content/{{$article[1]->slug}}" class="uk-icon-button uk-float-right" uk-icon="icon: chevron-right"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            @endif
+
+                            @if (count($article) > 2)
+                                <div class="uk-width-1-3@m each-article">
+                                    <div class="uk-card">
+                                        <div class="uk-card-media-top uk-background-cover" style="background-image: url({{ $article[2]->hero_img }});">
+                                        </div>
+                                        <div class="uk-card-body">
+                                            <a href="/content/{{$article[2]->slug}}" class="uk-card-title uk-text-left">{{ $article[2]->title }}</a>
+                    
+                                            <div uk-grid>
+                                                <div class="uk-width-3-4@m uk-text-truncate">
+                                                    
+                                                    <div class="uk-text-meta">
+                                                        <span>{{ $article[2]->created_at->diffForHumans() }}</span> {{-- <span>5 mins read</span> --}}
+                                                    </div>
+                                                </div>
+                                                <div class="uk-width-1-4@m uk-flex uk-flex-middle">
+                                                    <a href="/content/{{$article[2]->slug}}" class="uk-icon-button uk-float-right" uk-icon="icon: chevron-right"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            @endif
+
+                            @if (count($article) > 3)
+                                <div class="uk-width-1-3@m each-article">
+                                    <div class="uk-card">
+                                        <div class="uk-card-media-top uk-background-cover" style="background-image: url({{ $article[3]->hero_img }});">
+                                        </div>
+                                        <div class="uk-card-body">
+                                            <a href="/content/{{$article[3]->slug}}" class="uk-card-title uk-text-left">{{ $article[3]->title }}</a>
+                            
+                                            <div uk-grid>
+                                                <div class="uk-width-3-4@m uk-text-truncate">
+                                                    
+                                                    <div class="uk-text-meta">
+                                                        <span>{{ $article[3]->created_at->diffForHumans() }}</span> {{-- <span>5 mins read</span> --}}
+                                                    </div>
+                                                </div>
+                                                <div class="uk-width-1-4@m uk-flex uk-flex-middle">
+                                                    <a href="/content/{{$article[3]->slug}}" class="uk-icon-button uk-float-right" uk-icon="icon: chevron-right"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            @endif
+
+                            @if (count($article) > 4)
+                                <div class="uk-width-1-3@m each-article">
+                                    <div class="uk-card">
+                                        <div class="uk-card-media-top uk-background-cover" style="background-image: url({{ $article[4]->hero_img }});">
+                                        </div>
+                                        <div class="uk-card-body">
+                                            <a href="/content/{{$article[4]->slug}}" class="uk-card-title uk-text-left">{{ $article[4]->title }}</a>
+                            
+                                            <div uk-grid>
+                                                <div class="uk-width-3-4@m uk-text-truncate">
+                                                    
+                                                    <div class="uk-text-meta">
+                                                        <span>{{ $article[4]->created_at->diffForHumans() }}</span> {{-- <span>5 mins read</span> --}}
+                                                    </div>
+                                                </div>
+                                                <div class="uk-width-1-4@m uk-flex uk-flex-middle">
+                                                    <a href="/content/{{$article[4]->slug}}" class="uk-icon-button uk-float-right" uk-icon="icon: chevron-right"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            @endif
+
+                        {{-- @endforeach --}}
                     @endforeach
                 </div>
             </div>
