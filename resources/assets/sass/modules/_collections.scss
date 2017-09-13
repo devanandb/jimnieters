@@ -82,3 +82,33 @@
 		}
 	}
 }
+
+.tags-menu {
+	text-align: right;
+
+	.tag-links {
+		li {
+			margin-top: 0px !important;
+			a {
+				color: #666;
+				font-size: 22px;
+				display: inline-block;
+				border-right: 1px solid #ddd;
+				padding: 12px 20px;
+				&:hover {
+					text-decoration: none;
+					color: #222;
+				}
+			}
+
+			&.uk-active {
+				a {
+					color: #000;
+					font-weight: bold;
+					border-right: 2px solid #000;
+				}
+				
+			}
+		}
+	}
+}
