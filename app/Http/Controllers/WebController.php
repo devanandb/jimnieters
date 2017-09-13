@@ -37,6 +37,16 @@ class WebController extends Controller
         return view('web.tag', compact('articles', 'tag', 'tags', 'categories'));
     }
 
+    public function tags()
+    {   
+        $categories = Category::with('articles')->get();
+        $tags = Tag::with('articles')->get();
+        $tag = Tag::where('id', 1)->firstOrFail();
+        $articles = Tag::find(1)->articles;
+        // return $articles;
+        return view('web.tag', compact('articles', 'tag', 'tags', 'categories'));
+    }
+
     public function content($slug)
     {   
         $categories = Category::with('articles')->get();

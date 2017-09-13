@@ -59,6 +59,9 @@
                             </li>
                         @endif
                     @endforeach
+                    <li class="">
+                        <a class="" href="/tags">Tags</a>
+                    </li>
                     
                 </ul>
             </div>

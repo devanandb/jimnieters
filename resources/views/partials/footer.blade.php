@@ -16,7 +16,7 @@
 				</div>
 				<div class="uk-width-1-2@m">
 					<div class="subscribe-module uk-text-right@m uk-text-left">
-						<a href="" class="uk-button uk-button-primary">Contact me</a>
+						<a target="_blank" href="https://www.linkedin.com/in/jimnieters/en" class="uk-button uk-button-primary">Contact me</a>
 						<h4>Let's craft experiences that make people love your product or service. How? That's a conversation worth having!</h4>
 						
 					</div>
@@ -34,11 +34,14 @@
 	                            </li>
 	                        @endif
 	                    @endforeach
+	                    <li class="">
+	                        <a class="" href="/tags">Tags</a>
+	                    </li>
 					</ul>
 				</div>
 				<div class="uk-width-1-2@m">
 					<div class="copyright uk-text-right@m uk-text-left">
-						&copy; {{ date('Y') }} Jim Nieters | Online portfolio | Designed and Developed by <a href="https://www.linkedin.com/in/devanandb">Devanand</a>
+						&copy; {{ date('Y') }} Jim Nieters | Online portfolio | Designed and Developed by <a target="_blank" href="https://www.linkedin.com/in/devanandb">Devanand</a>
 					</div>
 				</div>
 			</div>
