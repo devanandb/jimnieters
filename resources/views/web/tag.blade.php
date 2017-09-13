@@ -2,7 +2,7 @@
 
 @section('meta')
 <meta name="description" content="All the tags for articles by Jim Nieters">
-<meta name="keywords" content="@foreach ($article->tags as $tag){{$tag->name}}, @endforeach">
+<meta name="keywords" content="@foreach ($tags as $metatag){{$metatag->name}}, @endforeach">
 
 @endsection
 @section('content')
