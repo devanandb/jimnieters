@@ -1,5 +1,10 @@
 @extends('layouts.app')
 
+@section('meta')
+<meta name="description" content="All the tags for articles by Jim Nieters">
+<meta name="keywords" content="@foreach ($article->tags as $tag){{$tag->name}}, @endforeach">
+
+@endsection
 @section('content')
 <div class="uk-container collection-page">
     {{-- <div class="hero-section">
