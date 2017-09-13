@@ -12,4 +12,6 @@ yarn-error.log
 .env
 /public/css/*
 /public/js/*
+/public/js/app.js
+/public/js/vendor.js
 /public/images/*
