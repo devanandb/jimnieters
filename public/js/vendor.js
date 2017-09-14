@@ -6,7 +6,7 @@ webpackJsonp([1],{
 /*! UIkit 3.0.0-beta.30 | http://www.getuikit.com | (c) 2014 - 2017 YOOtheme | MIT License */
 
 (function (global, factory) {
-	 true ? module.exports = factory(__webpack_require__(5)) :
+	 true ? module.exports = factory(__webpack_require__(4)) :
 	typeof define === 'function' && define.amd ? define('uikit', ['jquery'], factory) :
 	(global.UIkit = factory(global.jQuery));
 }(this, (function ($) { 'use strict';
@@ -8872,7 +8872,7 @@ return UIkit$2;
 
 /***/ }),
 
-/***/ 11:
+/***/ 10:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18964,11 +18964,11 @@ Vue$3.compile = compileToFunctions;
 
 module.exports = Vue$3;
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /***/ (function(module, exports) {
 
 var g;
@@ -18996,16 +18996,7 @@ module.exports = g;
 
 /***/ }),
 
-/***/ 48:
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(11);
-module.exports = __webpack_require__(1);
-
-
-/***/ }),
-
-/***/ 5:
+/***/ 4:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -29264,6 +29255,15 @@ return jQuery;
 } );
 
 
+/***/ }),
+
+/***/ 45:
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(10);
+module.exports = __webpack_require__(1);
+
+
 /***/ })
 
-},[48]);
+},[45]);

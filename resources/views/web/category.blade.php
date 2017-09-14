@@ -50,7 +50,7 @@
                                     <div class="uk-width-4-5 uk-text-truncate">
                                         
                                         <div class="uk-text-meta">
-                                            <span>{{ $article->created_at->diffForHumans() }}</span> {{-- <span>5 mins read</span> --}}
+                                            <span>{{ $article->updated_at->diffForHumans() }}</span> {{-- <span>5 mins read</span> --}}
                                         </div>
                                     </div>
                                     <div class="uk-width-1-5 uk-flex uk-flex-middle">
@@ -101,7 +101,7 @@
                                 </div>
                                 <div class="card-footer" uk-grid>
                                     <div class="uk-width-3-4 uk-flex uk-flex-middle">
-                                            <span class="uk-text-meta">{{ $article->created_at->diffForHumans() }}</span>
+                                            <span class="uk-text-meta">{{ $article->updated_at->diffForHumans() }}</span>
                                     </div>
                                     <div class="uk-width-1-4 uk-flex uk-flex-middle">
                                         <a href="/content/{{$article->slug}}" class="uk-icon-button uk-float-right" uk-icon="icon: chevron-right"></a>
@@ -130,7 +130,7 @@
                                         <div class="uk-width-4-5 uk-text-truncate">
                                             
                                             <div class="uk-text-meta">
-                                                <span>{{ $article->created_at->diffForHumans() }}</span> {{-- <span>5 mins read</span> --}}
+                                                <span>{{ $article->updated_at->diffForHumans() }}</span> {{-- <span>5 mins read</span> --}}
                                             </div>
                                         </div>
                                         <div class="uk-width-1-5 uk-flex uk-flex-middle">
@@ -194,7 +194,7 @@
                                         <div class="uk-width-4-5 uk-text-truncate">
                                             
                                             <div class="uk-text-meta">
-                                                <span>{{ $article->created_at->diffForHumans() }}</span> {{-- <span>5 mins read</span> --}}
+                                                <span>{{ $article->updated_at->diffForHumans() }}</span> {{-- <span>5 mins read</span> --}}
                                             </div>
                                         </div>
                                         <div class="uk-width-1-5 uk-flex uk-flex-middle">
