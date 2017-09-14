@@ -5,7 +5,6 @@
 			<div uk-grid>
 				<div class="uk-width-1-2@m">
 					<div class="social-links">
-						
 						<a target="_blank" href="mailto:jnieters@mac.com" class="uk-icon-button uk-margin-small-right" uk-icon="icon: mail"></a>
 						<a target="_blank" href="https://www.linkedin.com/in/jimnieters/en" class="uk-icon-button uk-margin-small-right" uk-icon="icon: linkedin"></a>
 						<a target="_blank" href="https://www.facebook.com/JimNieters" class="uk-icon-button  uk-margin-small-right" uk-icon="icon: facebook"></a>
