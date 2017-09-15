@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.admin')
 
 @section('title')
     Home
@@ -15,13 +15,14 @@
         <h1>Admin dashboard</h1>
         <br><br>
         <div uk-grid>
-            <div class="uk-width-1-5@m">
-                <ul class="uk-tab-left" uk-tab="connect: #component-tab-left; animation: uk-animation-fade">
+            <div class="uk-width-1-5@m tags-menu">
+                <ul class="uk-tab-left tag-links uk-list" uk-tab="connect: #component-tab-left; animation: uk-animation-fade">
                     <li><a href="#">Articles</a></li>
                     <li><a href="#">Categories</a></li>
                     <li><a href="#">Tags</a></li>
                     <li><a href="#">Subscriptions</a></li>
                 </ul>
+
             </div>
             <div class="uk-width-4-5@m">
                 <ul id="component-tab-left" class="uk-switcher">

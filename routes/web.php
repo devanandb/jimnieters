@@ -16,7 +16,7 @@ Route::get('/', 'WebController@index');
 
 Route::get('/articles', 'ArticleController@index');
 Route::get('/home', 'HomeController@index');
-Route::get('/admin/dashboard', 'WebController@dashboard');
+Route::get('/admin/dashboard', 'WebController@dashboard')->middleware('auth');
 
 Auth::routes();
 
