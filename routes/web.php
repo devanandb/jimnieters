@@ -16,6 +16,8 @@ Route::get('/', 'WebController@index');
 
 Route::get('/articles', 'ArticleController@index');
 Route::get('/home', 'HomeController@index');
+Route::get('/admin/dashboard', 'WebController@dashboard');
+
 Auth::routes();
 
 Route::get('/category/{category}', 'WebController@category');

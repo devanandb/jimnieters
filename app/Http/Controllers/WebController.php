@@ -39,12 +39,23 @@ class WebController extends Controller
 
     public function tags()
     {   
-        $categories = Category::with('articles')->get();
+        $categories = Category::all();
         $tags = Tag::with('articles')->get();
         $tag = Tag::where('id', 1)->firstOrFail();
         $articles = Tag::find(1)->articles;
         // return $articles;
         return view('web.tag', compact('articles', 'tag', 'tags', 'categories'));
+    }
+
+    public function dashboard()
+    {   
+        $articles = Article::all();
+        $categories = Category::with('articles')->get();
+        $tags = Tag::with('articles')->get();
+        $subscriptions = Subscription::all();
+
+        // return $articles;
+        return view('admin.dashboard', compact('articles', 'categories', 'tags', 'subscriptions'));
     }
 
     public function content($slug)

@@ -24,7 +24,7 @@
         <h1 class="uk-width-3-4@m">{{ $article->title }}</h1>
         <div class="meta-block uk-width-3-4@m">
             <div uk-grid>
-                <div class="uk-width-2-3@m">
+                <div class="uk-width-2-3">
                     <div class="uk-flex uk-flex-middle">
                         <img class="uk-border-circle" src="/images/jim.jpg" width="50" height="50">
                         <div class="meta-info"><span class="by">by &nbsp;</span><span class="author">Jim Nieters</span><br><span class="meta-desc">Co-founder and Chief UX Strategist | <a target="_blank" href="http://www.experienceoutcomes.com/">Experience Outcomes</a></span></div>
@@ -35,7 +35,7 @@
                         <a href="#" class="uk-icon-link" uk-icon="icon: chevron-left"></a> <a class="uk-button uk-button-text" href="{{ url()->previous() }}">Back</a>
                     </div>
                 </div>
-                <div class="uk-width-1-3@m">
+                <div class="uk-width-1-3">
                     <div class="uk-text-right">
                         <div class="uk-flex uk-flex-middle uk-flex-right" style="height: 50px">
                             <div class="social-buttons">
