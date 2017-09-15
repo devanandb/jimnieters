@@ -6,6 +6,17 @@
 @section('meta')
 <meta name="description" content="I am a ux leader who loves to inspire and be inspired by design. Great design disrupts markets and delights users.">
 <meta name="keywords" content="Jim Nieters, Portfolio, Blog, User experience, Design, Leadership">
+
+<meta property="og:title" content="Home | Jim Nieters">
+<meta property="og:description" content="I am a ux leader who loves to inspire and be inspired by design. Great design disrupts markets and delights users.">
+<meta property="og:image" content="{{ Request::root() }}/images/jim.jpg">
+<meta property="og:url" content="{{ request()->fullUrl() }}">
+<meta property="og:type" content="home" />
+
+<meta name="twitter:title" content="Home | Jim Nieters">
+<meta name="twitter:description" content="I am a ux leader who loves to inspire and be inspired by design. Great design disrupts markets and delights users.">
+<meta name="twitter:image" content="{{ Request::root() }}/images/jim.jpg">
+<meta name="twitter:card" content="{{ request()->fullUrl() }}">
 @endsection
 
 @section('content')

@@ -9,6 +9,7 @@
 <meta property="og:description" content="{{ $article->summary }}">
 <meta property="og:image" content="{{ Request::root() }}{{ $article->hero_img }}">
 <meta property="og:url" content="{{ request()->fullUrl() }}">
+<meta property="og:type" content="article" />
 
 <meta name="twitter:title" content="{{ $article->title }}">
 <meta name="twitter:description" content="{{ $article->summary }}">

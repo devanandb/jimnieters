@@ -6,6 +6,17 @@
 @section('meta')
 <meta name="description" content="{{$category->description}}">
 <meta name="keywords" content="{{$category->title}}, Article, Portfolio, User experience, Design, Leadership">
+
+<meta property="og:title" content="{{ $category->title }}">
+<meta property="og:description" content="{{ $category->description }}">
+<meta property="og:image" content="{{ Request::root() }}{{ $category->image }}">
+<meta property="og:url" content="{{ request()->fullUrl() }}">
+<meta property="og:type" content="category" />
+
+<meta name="twitter:title" content="{{ $category->title }}">
+<meta name="twitter:description" content="{{ $category->description }}">
+<meta name="twitter:image" content="{{ Request::root() }}{{ $category->image }}">
+<meta name="twitter:card" content="{{ request()->fullUrl() }}">
 @endsection
 
 @section('content')
