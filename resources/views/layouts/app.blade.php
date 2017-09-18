@@ -14,9 +14,9 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
-    <script async src="{{ asset('js/manifest.js') }}"></script>
     <!-- Vendor script -->
-    <script async src="{{ asset('js/vendor.js') }}"></script>
+    <script src="{{ asset('js/manifest.js') }}"></script>
+    <script src="{{ asset('js/vendor.js') }}"></script>
 
 </head>
 <body>
