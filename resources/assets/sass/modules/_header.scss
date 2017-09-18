@@ -1,11 +1,24 @@
 header {
 	border-bottom: 1px solid #ddd;
+	/*background: linear-gradient(-20deg, rgb(252, 96, 118) 0%, rgb(255, 154, 68) 100%);*/
+	background-image: -webkit-linear-gradient(top right, #5753C9 0%, #6E7FF3 100%);
+	.uk-navbar-nav > li > a {
+		color: #eee;
+		&:hover {
+			color: #fff;
+		}
+	}
+	
 }
 .uk-logo {
 	padding-left: 0px;
 	font-family: 'PT Serif', serif !important;
 	font-size: 24px;
 	font-weight: 700;
+	color: #eee;
+	&:hover {
+		color: #fff;
+	}
 }
 
 footer {

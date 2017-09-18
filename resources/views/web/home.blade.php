@@ -25,7 +25,7 @@
     <div class="uk-container">
         <div class="" uk-grid>
             <div class="uk-width-3-4@m">
-                <h1>I am a ux leader who loves to inspire and be inspired by design. Great design disrupts markets and delights users.</h1>
+                <h1>I am a ux leader who loves to inspire and be inspired by design. Great design <span>disrupts markets</span> and <span>delights users</span>.</h1>
             </div>
         </div>
     </div>

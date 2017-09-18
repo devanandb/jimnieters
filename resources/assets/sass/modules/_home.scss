@@ -4,6 +4,24 @@
 	margin: 120px 0px;
 
 }
+
+.home-hero {
+	h1 {
+		font-family: 'PT Serif', serif !important;
+		font-weight: 300;
+		font-size: 38px;
+		line-height: 50px;
+		text-rendering: optimizeLegibility;
+	    -webkit-font-smoothing: antialiased;
+	    -moz-osx-font-smoothing: grayscale;
+	    -moz-font-feature-settings: "liga" on;
+	    letter-spacing: -.003em;
+	    color: #444;
+	    span {
+	    	color: #000;
+	    }
+	}
+}
 .each-category {
 	margin-bottom: 100px;
 	.header {

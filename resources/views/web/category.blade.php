@@ -78,7 +78,7 @@
         </div>
         <div class="uk-width-1-3@m">
             <div class="uk-card">
-                <div class="uk-card-media-top uk-background-cover uk-flex uk-flex-center uk-flex-middle" style="background-image: linear-gradient(-225deg, #5753C9 0%, #6E7FF3 100%);">
+                <div class="uk-card-media-top uk-background-cover uk-flex uk-flex-center uk-flex-middle" style="background: linear-gradient(-20deg, rgb(252, 96, 118) 0%, rgb(255, 154, 68) 100%);">
                     <div class="lead-txt">Subscribe now</div>
                     
                     {{-- <img src="{{ $article->hero_img }}" alt=""> --}}
