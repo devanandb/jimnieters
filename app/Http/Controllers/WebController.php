@@ -7,6 +7,7 @@ use App\Article;
 use App\Category;
 use App\Tag;
 use App\Subscription;
+use Spatie\Sitemap\SitemapGenerator;
 
 class WebController extends Controller
 {
@@ -77,5 +78,12 @@ class WebController extends Controller
         $subscription->channel = $request->channel;
 
         $subscription->save();
+    }
+
+    public function generateSitemap()
+    {
+        $path = 'sitemap.xml';
+        SitemapGenerator::create('https://jimnieters.online')->writeToFile($path);
+        return 'generated';
     }
 }

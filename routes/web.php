@@ -24,5 +24,6 @@ Route::get('/category/{category}', 'WebController@category');
 Route::get('/tag/{tag}', 'WebController@tag');
 Route::get('/tags', 'WebController@tags');
 Route::get('/content/{content}', 'WebController@content');
+Route::get('/site/sitemap', 'WebController@generateSitemap');
 
 Route::post('/site/subscribe', 'WebController@subscribe');
